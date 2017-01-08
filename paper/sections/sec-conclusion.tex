@@ -1,0 +1,24 @@
+% !TEX root = ../DuvalPeyre-SparseSpikes.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Conclusion}
+
+% Whereas~\cite{Candes-superresol-noisy} have provided an $L^2$ robustness to noise result for  the super-resolution problem and~\cite{Fernandez-Granda-support,Azais-inaccurate} have provided general bounds on the errors on the support and the amplitudes of the masses,
+
+In this paper, we have given a precise statement about the support recovery property of sparse spikes deconvolution with total variation regularization.
+%
+This support recovery is governed by the non-degeneracy of a minimal norm certificate. This hypothesis can be checked by computing a vanishing derivative pre-certificate, which can be computed in closed form.
+%
+We have shown that under this non-degeneracy hypothesis, one recovers the same number of spikes and that these spikes converge to the original ones when $\la$ and $\norm{w}/\la$ are small enough. 
+% 
+While previous stability results~\cite{Candes-superresol-noisy,Fernandez-Granda-support,Azais-inaccurate} hold for an arbitrary noise level and make use of any non-degenerate certificate, they are formulated in terms of local averages of the recovered measure and do not describe precisely the support. In contrast, our result which requires a specific certificate to be non-degenerate and a regime where $\la$ and $\norm{w}/\la$ are small enough provides exact support stability. These settings and results are thus not comparable, and provide complementary informations about the performance of total variation regularization. 
+ 
+Developing a similar framework for the discrete $\ell^1$ setting, we have also improved upon existing results about stability of the support by introducing the notion of extended support of a measure. Our study highlights the difference between the continuous and the discrete case: when the size of the grid is small enough, the stable recovery of the support is generally not possible in the discrete framework. Yet,  in the non degenerate case, the reconstructed support at small noise is a slight modification of the original one: each original spike yields at most one pair of consecutive spikes which surround it.
+  
+Finally, let us note that the proposed method extends to non-stationary filtering operators and to arbitrary dimensions. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements} 
+
+The authors would like to thank Jalal Fadili, Charles Dossal and Samuel Vaiter for fruitful discussions. This work has been supported by the European Research Council (ERC project SIGMA-Vision).

@@ -1,0 +1,1195 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.19)  8 JAN 2017 11:22
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**DuvalPeyre-SparseSpikes.tex
+(./DuvalPeyre-SparseSpikes.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen105
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4691.
+\c@Hy@tempcnt=\count91
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5044.
+\XeTeXLinkMargin=\dimen106
+\Fld@menulength=\count92
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+\Fld@listcount=\count96
+\c@bookmark@seq@number=\count97
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(./mystyle.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen109
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip11
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks18
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks19
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks20
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks27
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+)
+\c@ContinuedFloat=\count110
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count111
+\sf@farskip=\skip50
+\sf@captopadj=\dimen125
+\sf@capskip=\skip51
+\sf@nearskip=\skip52
+\c@subfigure=\count112
+\c@subfigure@save=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@subtable@save=\count116
+\c@lotdepth=\count117
+\sf@top=\skip53
+\sf@bottom=\skip54
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks28
+\extratabsurround=\skip55
+\backup@length=\skip56
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen128
+\TX@old@table=\dimen129
+\TX@old@col=\dimen130
+\TX@target=\dimen131
+\TX@delta=\dimen132
+\TX@cols=\count118
+\TX@ftn=\toks29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+\c@thm=\count119
+\c@prop=\count120
+\c@defn=\count121
+\c@cor=\count122
+\c@lem=\count123
+\c@rem=\count124
+\c@exmp=\count125
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count126
+\float@exts=\toks30
+\float@box=\box28
+\@float@everytoks=\toks31
+\@floatcapt=\box29
+)
+\@float@every@listing=\toks32
+\c@listing=\count127
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip57
+\bibsep=\skip58
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count128
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen133
+))
+(./DuvalPeyre-SparseSpikes.aux)
+\openout1 = `DuvalPeyre-SparseSpikes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count129
+\scratchdimen=\dimen134
+\scratchbox=\box30
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen135
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks34
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 28.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count135
+)
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
+
+(./DuvalPeyre-SparseSpikes.out) (./DuvalPeyre-SparseSpikes.out)
+\@outlinefile=\write3
+\openout3 = `DuvalPeyre-SparseSpikes.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+
+(./sections/sec-abstract.tex) (./sections/sec-intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--2
+
+ []
+
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] [5] [6]) (./sections/sec-preliminaries.tex [7] [8pdfTeX warning (ex
+t4): destination with the same identifier (name{equation.2.11}) has been alread
+y used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.85 }
+      ]
+Overfull \hbox (5.08553pt too wide) in paragraph at lines 88--90
+[]\OT1/cmr/m/n/10 Another source of in-for-ma-tion for the study of Prob-lems [
+] and []
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.11
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 }
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 }
+      pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 }
+       pdfTeX warning (ext4): destination with the same identifier (name{equati
+on.2.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 \end{align}
+                  [9] [10]
+Overfull \hbox (3.29208pt too wide) in paragraph at lines 213--216
+\OT1/cmr/m/n/10 It is well known that in this case the spaces $[] ^^H$ and $[] 
+^^H[]$ are finite-dimensional,
+ []
+
+[11] [12]) (./sections/sec-robustness.tex
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+ [13] [14] [15] [16] [17]
+Overfull \hbox (6.24754pt too wide) in paragraph at lines 318--320
+\OT1/cmr/m/n/10 Indeed, this im-plicit equa-tion sim-ply states that $[]([]) = 
+[](\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 ) = []([])$,
+ []
+
+[18]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 359.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-certif.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 18590 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-certif-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:39
+(epstopdf)                    size: 15577 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-certif-eps-converted-to.pdf ./images/paths/3diracsa-fc10-certif.eps>
+(epstopdf)             \includegraphics on input line 401.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf, id=531, 486.81876pt 
+x 279.0425pt>
+File: ./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use ./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-certif-eps-converted-to.p
+df used on input line 401.
+(pdftex.def)             Requested size: 165.59853pt x 104.1389pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise0-scale0
+-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 1401818 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise0-scale0
+-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:40
+(epstopdf)                    size: 147043 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise0-scale0-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise0-
+scale0-path.eps>
+(epstopdf)             \includegraphics on input line 402.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise0-scale0-path-eps-converted-to.pdf, id=533, 
+501.875pt x 313.17pt>
+File: ./images/paths/3diracsa-fc10-noise0-scale0-path-eps-converted-to.pdf Grap
+hic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise0-scale0-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise0-scale0-path-eps-co
+nverted-to.pdf used on input line 402.
+(pdftex.def)             Requested size: 169.0519pt x 105.48721pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise40-scale
+0-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 2589566 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise40-scale
+0-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:41
+(epstopdf)                    size: 355956 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise40-scale0-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise4
+0-scale0-path.eps>
+(epstopdf)             \includegraphics on input line 404.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise40-scale0-path-eps-converted-to.pdf, id=534,
+ 501.875pt x 313.17pt>
+File: ./images/paths/3diracsa-fc10-noise40-scale0-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise40-scale0-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise40-scale0-path-eps-c
+onverted-to.pdf used on input line 404.
+(pdftex.def)             Requested size: 169.0519pt x 105.48721pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise80-scale
+0-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 3772702 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise80-scale
+0-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:42
+(epstopdf)                    size: 558857 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise80-scale0-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise8
+0-scale0-path.eps>
+(epstopdf)             \includegraphics on input line 405.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise80-scale0-path-eps-converted-to.pdf, id=535,
+ 501.875pt x 313.17pt>
+File: ./images/paths/3diracsa-fc10-noise80-scale0-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise80-scale0-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise80-scale0-path-eps-c
+onverted-to.pdf used on input line 405.
+(pdftex.def)             Requested size: 169.0519pt x 105.48721pt.
+
+[19]
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-certif.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 18590 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-certif-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:39
+(epstopdf)                    size: 15577 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-certif-eps-converted-to.pdf ./images/paths/3diracsa-fc10-certif.eps>
+(epstopdf)             \includegraphics on input line 424.
+Package epstopdf Info: Output file is already uptodate.
+File: ./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use ./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-certif-eps-converted-to.p
+df used on input line 424.
+(pdftex.def)             Requested size: 165.59853pt x 104.1389pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise7-scale1
+-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 1455598 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise7-scale1
+-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:43
+(epstopdf)                    size: 155508 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise7-scale1-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise7-
+scale1-path.eps>
+(epstopdf)             \includegraphics on input line 425.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise7-scale1-path-eps-converted-to.pdf, id=545, 
+501.875pt x 313.17pt>
+File: ./images/paths/3diracsa-fc10-noise7-scale1-path-eps-converted-to.pdf Grap
+hic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise7-scale1-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise7-scale1-path-eps-co
+nverted-to.pdf used on input line 425.
+(pdftex.def)             Requested size: 169.0519pt x 105.48721pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise10-scale
+1-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 2571182 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise10-scale
+1-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:44
+(epstopdf)                    size: 332216 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise10-scale1-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise1
+0-scale1-path.eps>
+(epstopdf)             \includegraphics on input line 427.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise10-scale1-path-eps-converted-to.pdf, id=546,
+ 502.87875pt x 313.17pt>
+File: ./images/paths/3diracsa-fc10-noise10-scale1-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise10-scale1-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise10-scale1-path-eps-c
+onverted-to.pdf used on input line 427.
+(pdftex.def)             Requested size: 169.0519pt x 105.27696pt.
+Package epstopdf Info: Source file: <./images/paths/3diracsa-fc10-noise50-scale
+1-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 6301790 bytes
+(epstopdf)             Output file: <./images/paths/3diracsa-fc10-noise50-scale
+1-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:46
+(epstopdf)                    size: 992064 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/paths/3diracsa-fc
+10-noise50-scale1-path-eps-converted-to.pdf ./images/paths/3diracsa-fc10-noise5
+0-scale1-path.eps>
+(epstopdf)             \includegraphics on input line 428.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/paths/3diracsa-fc10-noise50-scale1-path-eps-converted-to.pdf, id=547,
+ 514.92375pt x 330.23375pt>
+File: ./images/paths/3diracsa-fc10-noise50-scale1-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/paths/3diracsa-fc10-noise50-scale1-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/paths/3diracsa-fc10-noise50-scale1-path-eps-c
+onverted-to.pdf used on input line 428.
+(pdftex.def)             Requested size: 169.0519pt x 108.4131pt.
+
+[20 <./images/paths/3diracsa-fc10-certif-eps-converted-to.pdf> <./images/paths/
+3diracsa-fc10-noise0-scale0-path-eps-converted-to.pdf> <./images/paths/3diracsa
+-fc10-noise40-scale0-path-eps-converted-to.pdf> <./images/paths/3diracsa-fc10-n
+oise80-scale0-path-eps-converted-to.pdf>]) (./sections/sec-vanishing.tex
+[21 <./images/paths/3diracsa-fc10-noise7-scale1-path-eps-converted-to.pdf> <./i
+mages/paths/3diracsa-fc10-noise10-scale1-path-eps-converted-to.pdf> <./images/p
+aths/3diracsa-fc10-noise50-scale1-path-eps-converted-to.pdf>] [22] [23]
+Overfull \hbox (41.3247pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/10 and us-ing the no-ta-tions of the proof of The-o-rem []2[], the
+ im-plicit equa-tion $\OML/cmm/m/it/10 E[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]
+; x[]; ^^U; \OT1/cmr/m/n/10 0) =
+ []
+
+
+Overfull \hbox (11.55762pt too wide) in paragraph at lines 159--167
+\OT1/cmr/m/n/10 verges uni-formly (and thus in the $\OML/cmm/m/it/10 L[]$ \OT1/
+cmr/m/n/10 strong topol-ogy) to $^^@[](^^@[]^^@[])[] []$
+ []
+
+Package epstopdf Info: Source file: <./images/certificates/ideal-3diracsa-80.ep
+s>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 104141 bytes
+(epstopdf)             Output file: <./images/certificates/ideal-3diracsa-80-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:46
+(epstopdf)                    size: 70866 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates/idea
+l-3diracsa-80-eps-converted-to.pdf ./images/certificates/ideal-3diracsa-80.eps>
+
+(epstopdf)             \includegraphics on input line 206.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates/ideal-3diracsa-80-eps-converted-to.pdf, id=662, 486.8187
+6pt x 279.0425pt>
+File: ./images/certificates/ideal-3diracsa-80-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./images/certificates/ideal-3diracsa-80-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/certificates/ideal-3diracsa-80-eps-converted-
+to.pdf used on input line 206.
+(pdftex.def)             Requested size: 169.0519pt x 96.89992pt.
+Package epstopdf Info: Source file: <./images/certificates/ideal-3diracsa-70.ep
+s>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 118679 bytes
+(epstopdf)             Output file: <./images/certificates/ideal-3diracsa-70-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:47
+(epstopdf)                    size: 90472 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates/idea
+l-3diracsa-70-eps-converted-to.pdf ./images/certificates/ideal-3diracsa-70.eps>
+
+(epstopdf)             \includegraphics on input line 207.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates/ideal-3diracsa-70-eps-converted-to.pdf, id=663, 486.8187
+6pt x 279.0425pt>
+File: ./images/certificates/ideal-3diracsa-70-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./images/certificates/ideal-3diracsa-70-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/certificates/ideal-3diracsa-70-eps-converted-
+to.pdf used on input line 207.
+(pdftex.def)             Requested size: 169.0519pt x 96.89992pt.
+Package epstopdf Info: Source file: <./images/certificates/ideal-3diracsa-60.ep
+s>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 124523 bytes
+(epstopdf)             Output file: <./images/certificates/ideal-3diracsa-60-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:47
+(epstopdf)                    size: 99223 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates/idea
+l-3diracsa-60-eps-converted-to.pdf ./images/certificates/ideal-3diracsa-60.eps>
+
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates/ideal-3diracsa-60-eps-converted-to.pdf, id=664, 486.8187
+6pt x 279.0425pt>
+File: ./images/certificates/ideal-3diracsa-60-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./images/certificates/ideal-3diracsa-60-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/certificates/ideal-3diracsa-60-eps-converted-
+to.pdf used on input line 208.
+(pdftex.def)             Requested size: 169.0519pt x 96.89992pt.
+Package epstopdf Info: Source file: <./images/certificates/ideal-3diracsa-50.ep
+s>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 105583 bytes
+(epstopdf)             Output file: <./images/certificates/ideal-3diracsa-50-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:48
+(epstopdf)                    size: 82751 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates/idea
+l-3diracsa-50-eps-converted-to.pdf ./images/certificates/ideal-3diracsa-50.eps>
+
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates/ideal-3diracsa-50-eps-converted-to.pdf, id=665, 486.8187
+6pt x 279.0425pt>
+File: ./images/certificates/ideal-3diracsa-50-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./images/certificates/ideal-3diracsa-50-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/certificates/ideal-3diracsa-50-eps-converted-
+to.pdf used on input line 209.
+(pdftex.def)             Requested size: 169.0519pt x 96.89992pt.
+ [24]
+Package epstopdf Info: Source file: <./images/certificates-pathological/ideal-p
+athological3-70.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 160246 bytes
+(epstopdf)             Output file: <./images/certificates-pathological/ideal-p
+athological3-70-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:48
+(epstopdf)                    size: 129641 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates-path
+ological/ideal-pathological3-70-eps-converted-to.pdf ./images/certificates-path
+ological/ideal-pathological3-70.eps>
+(epstopdf)             \includegraphics on input line 253.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates-pathological/ideal-pathological3-70-eps-converted-to.pdf
+, id=674, 498.86375pt x 279.0425pt>
+File: ./images/certificates-pathological/ideal-pathological3-70-eps-converted-t
+o.pdf Graphic file (type pdf)
+
+<use ./images/certificates-pathological/ideal-pathological3-70-eps-converted-to
+.pdf>
+Package pdftex.def Info: ./images/certificates-pathological/ideal-pathological3
+-70-eps-converted-to.pdf used on input line 253.
+(pdftex.def)             Requested size: 169.0519pt x 94.5581pt.
+Package epstopdf Info: Source file: <./images/certificates-pathological/ideal-p
+athological3-70-zoom.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 42627 bytes
+(epstopdf)             Output file: <./images/certificates-pathological/ideal-p
+athological3-70-zoom-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:49
+(epstopdf)                    size: 38453 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/certificates-path
+ological/ideal-pathological3-70-zoom-eps-converted-to.pdf ./images/certificates
+-pathological/ideal-pathological3-70-zoom.eps>
+(epstopdf)             \includegraphics on input line 254.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/certificates-pathological/ideal-pathological3-70-zoom-eps-converted-t
+o.pdf, id=675, 499.8675pt x 280.04625pt>
+File: ./images/certificates-pathological/ideal-pathological3-70-zoom-eps-conver
+ted-to.pdf Graphic file (type pdf)
+
+<use ./images/certificates-pathological/ideal-pathological3-70-zoom-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: ./images/certificates-pathological/ideal-pathological3
+-70-zoom-eps-converted-to.pdf used on input line 254.
+(pdftex.def)             Requested size: 169.0519pt x 94.71022pt.
+ [25 <./images/certificates/ideal-3diracsa-80-eps-converted-to.pdf> <./images/c
+ertificates/ideal-3diracsa-70-eps-converted-to.pdf> <./images/certificates/idea
+l-3diracsa-60-eps-converted-to.pdf> <./images/certificates/ideal-3diracsa-50-ep
+s-converted-to.pdf>]) (./sections/sec-discrete.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ell' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 9.
+
+[26 <./images/certificates-pathological/ideal-pathological3-70-eps-converted-to
+.pdf> <./images/certificates-pathological/ideal-pathological3-70-zoom-eps-conve
+rted-to.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{
+equation.5.28}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 \end{align}
+                 [27pdfTeX warning (ext4): destination with the same identifier
+ (name{equation.5.28}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \end{rem}
+              pdfTeX warning (ext4): destination with the same identifier (name
+{equation.5.29}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \end{rem}
+              pdfTeX warning (ext4): destination with the same identifier (name
+{equation.5.29}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \end{rem}
+              pdfTeX warning (ext4): destination with the same identifier (name
+{equation.5.30}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.90 \end{rem}
+              ]pdfTeX warning (ext4): destination with the same identifier (nam
+e{equation.5.30}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 \end{align}
+                  [28] [29] [30] [31]
+Overfull \hbox (1.66135pt too wide) in paragraph at lines 308--308
+[] 
+ []
+
+[32] [33]
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+1.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 103959 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+1-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:49
+(epstopdf)                    size: 71588 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid1-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80-ongr
+id1.eps>
+(epstopdf)             \includegraphics on input line 415.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid1-eps-converted-to.pdf, id=887, 486.
+81876pt x 279.0425pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid1-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid1-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid1-eps-conver
+ted-to.pdf used on input line 415.
+(pdftex.def)             Requested size: 162.15042pt x 92.94438pt.
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+0.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 103955 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+0-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:50
+(epstopdf)                    size: 71595 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid0-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80-ongr
+id0.eps>
+(epstopdf)             \includegraphics on input line 416.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid0-eps-converted-to.pdf, id=888, 486.
+81876pt x 279.0425pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid0-eps-converted-to.pdf Graphic 
+file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid0-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid0-eps-conver
+ted-to.pdf used on input line 416.
+(pdftex.def)             Requested size: 162.15042pt x 92.94438pt.
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+1-zoom.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 16777 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+1-zoom-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:51
+(epstopdf)                    size: 12139 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid1-zoom-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80
+-ongrid1-zoom.eps>
+(epstopdf)             \includegraphics on input line 417.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid1-zoom-eps-converted-to.pdf, id=889,
+ 471.7625pt x 279.0425pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid1-zoom-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid1-zoom-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid1-zoom-eps-c
+onverted-to.pdf used on input line 417.
+(pdftex.def)             Requested size: 155.24895pt x 91.82883pt.
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+0-zoom.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 16438 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+0-zoom-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:51
+(epstopdf)                    size: 11819 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid0-zoom-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80
+-ongrid0-zoom.eps>
+(epstopdf)             \includegraphics on input line 418.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid0-zoom-eps-converted-to.pdf, id=890,
+ 471.7625pt x 279.0425pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid0-zoom-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid0-zoom-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid0-zoom-eps-c
+onverted-to.pdf used on input line 418.
+(pdftex.def)             Requested size: 155.24895pt x 91.82883pt.
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+1-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 633930 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+1-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:52
+(epstopdf)                    size: 17541 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid1-path-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80
+-ongrid1-path.eps>
+(epstopdf)             \includegraphics on input line 437.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid1-path-eps-converted-to.pdf, id=892,
+ 504.88625pt x 355.3275pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid1-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid1-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid1-path-eps-c
+onverted-to.pdf used on input line 437.
+(pdftex.def)             Requested size: 165.59853pt x 116.54274pt.
+Package epstopdf Info: Source file: <./images/discrete/ideal-2diracsa-80-ongrid
+0-path.eps>
+(epstopdf)                    date: 2013-10-25 17:51:10
+(epstopdf)                    size: 643338 bytes
+(epstopdf)             Output file: <./images/discrete/ideal-2diracsa-80-ongrid
+0-path-eps-converted-to.pdf>
+(epstopdf)                    date: 2013-10-25 21:09:53
+(epstopdf)                    size: 19345 bytes
+(epstopdf)             Command: <repstopdf --outfile=./images/discrete/ideal-2d
+iracsa-80-ongrid0-path-eps-converted-to.pdf ./images/discrete/ideal-2diracsa-80
+-ongrid0-path.eps>
+(epstopdf)             \includegraphics on input line 438.
+Package epstopdf Info: Output file is already uptodate.
+
+<./images/discrete/ideal-2diracsa-80-ongrid0-path-eps-converted-to.pdf, id=893,
+ 506.89375pt x 356.33125pt>
+File: ./images/discrete/ideal-2diracsa-80-ongrid0-path-eps-converted-to.pdf Gra
+phic file (type pdf)
+
+<use ./images/discrete/ideal-2diracsa-80-ongrid0-path-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/discrete/ideal-2diracsa-80-ongrid0-path-eps-c
+onverted-to.pdf used on input line 438.
+(pdftex.def)             Requested size: 165.59853pt x 116.4098pt.
+
+[34 <./images/discrete/ideal-2diracsa-80-ongrid1-eps-converted-to.pdf> <./image
+s/discrete/ideal-2diracsa-80-ongrid0-eps-converted-to.pdf> <./images/discrete/i
+deal-2diracsa-80-ongrid1-zoom-eps-converted-to.pdf> <./images/discrete/ideal-2d
+iracsa-80-ongrid0-zoom-eps-converted-to.pdf>]
+Overfull \hbox (12.945pt too wide) in paragraph at lines 457--460
+\OT1/cmr/m/n/10 As a con-se-quence $\OML/cmm/m/it/10 C[]$ \OT1/cmr/m/n/10 is th
+e po-lar set of the con-vex hull of $[]$. 
+ []
+
+<./images/convexe-n3.png, id=944, 401.5pt x 288.07625pt>
+File: ./images/convexe-n3.png Graphic file (type png)
+
+<use ./images/convexe-n3.png>
+Package pdftex.def Info: ./images/convexe-n3.png used on input line 478.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+
+<./images/convexe-n4.png, id=946, 401.5pt x 288.07625pt>
+File: ./images/convexe-n4.png Graphic file (type png)
+
+<use ./images/convexe-n4.png>
+Package pdftex.def Info: ./images/convexe-n4.png used on input line 479.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+
+<./images/convexe-n7.png, id=948, 401.5pt x 288.07625pt>
+File: ./images/convexe-n7.png Graphic file (type png)
+
+<use ./images/convexe-n7.png>
+Package pdftex.def Info: ./images/convexe-n7.png used on input line 480.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+
+<./images/convexe-n3bis.png, id=950, 401.5pt x 288.07625pt>
+File: ./images/convexe-n3bis.png Graphic file (type png)
+
+<use ./images/convexe-n3bis.png>
+Package pdftex.def Info: ./images/convexe-n3bis.png used on input line 481.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+
+<./images/convexe-n4bis.png, id=952, 401.5pt x 288.07625pt>
+File: ./images/convexe-n4bis.png Graphic file (type png)
+
+<use ./images/convexe-n4bis.png>
+Package pdftex.def Info: ./images/convexe-n4bis.png used on input line 482.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+
+<./images/convexe-n7bis.png, id=954, 401.5pt x 288.07625pt>
+File: ./images/convexe-n7bis.png Graphic file (type png)
+
+<use ./images/convexe-n7bis.png>
+Package pdftex.def Info: ./images/convexe-n7bis.png used on input line 483.
+(pdftex.def)             Requested size: 103.50105pt x 97.38522pt.
+ [35 <./images/discrete/ideal-2diracsa-80-ongrid1-path-eps-converted-to.pdf> <.
+/images/discrete/ideal-2diracsa-80-ongrid0-path-eps-converted-to.pdf>] [36pdfTe
+X warning (ext4): destination with the same identifier (name{subfigure.7.1}) ha
+s been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 P
+       roblem~$(\Dd_\la^{\Gg_n}(y_0+w))$ corresponds to the projection of $\...
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.7.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 P
+       roblem~$(\Dd_\la^{\Gg_n}(y_0+w))$ corresponds to the projection of $\...
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.7.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.491 P
+       roblem~$(\Dd_\la^{\Gg_n}(y_0+w))$ corresponds to the projection of $\...
+ <./images/convexe-n3.png (PNG copy)> <./images/convexe-n4.png (PNG copy)> <./i
+mages/convexe-n7.png (PNG copy)> <./images/convexe-n3bis.png (PNG copy)> <./ima
+ges/convexe-n4bis.png (PNG copy)> <./images/convexe-n7bis.png (PNG copy)>])
+(./sections/sec-conclusion.tex) (./sections/sec-appendix.tex [37]
+Overfull \hbox (4.70992pt too wide) in paragraph at lines 66--71
+\OT1/cmr/m/n/10 The in-fi-mum is fi-nite since for any ad-mis-si-ble $\OML/cmm/
+m/it/10 p$\OT1/cmr/m/n/10 , $\OMS/cmsy/m/n/10 h^^@\OML/cmm/m/it/10 y[];  p\OMS/
+cmsy/m/n/10 i \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 m[];  \OT1/c
+mr/m/n/10 ^^H\OML/cmm/m/it/10 p\OMS/cmsy/m/n/10 i \U/msa/m/n/10 > \OMS/cmsy/m/n
+/10 ^^@j j\OML/cmm/m/it/10 m[]\OMS/cmsy/m/n/10 j j[]$\OT1/cmr/m/n/10 .
+ []
+
+[38] [39]) (./DuvalPeyre-SparseSpikes.bbl [40] [41] [42])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+ [43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+
+(./DuvalPeyre-SparseSpikes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package rerunfilecheck Info: File `DuvalPeyre-SparseSpikes.out' has not changed
+.
+(rerunfilecheck)             Checksum: 177693C5A34661984158DEB403267E48;2264.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
+ ) 
+Here is how much of TeX's memory you used:
+ 9194 strings out of 493014
+ 137313 string characters out of 6133351
+ 236435 words of memory out of 5000000
+ 12315 multiletter control sequences out of 15000+600000
+ 14568 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 51i,17n,49p,1384b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on DuvalPeyre-SparseSpikes.pdf (43 pages, 3704372 bytes).
+PDF statistics:
+ 1191 PDF objects out of 1200 (max. 8388607)
+ 1026 compressed objects within 11 object streams
+ 233 named destinations out of 1000 (max. 500000)
+ 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+

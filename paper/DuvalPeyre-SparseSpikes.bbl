@@ -1,0 +1,197 @@
+\begin{thebibliography}{10}
+
+\bibitem{Azais-inaccurate}
+J-M. Azais, Y.~{De Castro}, and F.~Gamboa.
+\newblock Spike detection from inaccurate samplings.
+\newblock {\em Applied and Computational Harmonic Analysis, to appear}, 2014.
+
+\bibitem{Bhaskar-line-spectral}
+B.N. Bhaskar and B.~Recht.
+\newblock Atomic norm denoising with applications to line spectral estimation.
+\newblock In {\em 2011 49th Annual Allerton Conference on Communication,
+  Control, and Computing}, pages 261--268, 2011.
+
+\bibitem{Blu-fri}
+T.~Blu, P.-L. Dragotti, M.~Vetterli, P.~Marziliano, and L.~Coulot.
+\newblock Sparse sampling of signal innovations.
+\newblock {\em IEEE Signal Processing Magazine}, 25(2):31--40, 2008.
+
+\bibitem{Bredies-space-measures}
+K.~Bredies and H.K. Pikkarainen.
+\newblock Inverse problems in spaces of measures.
+\newblock {\em ESAIM: Control, Optimisation and Calculus of Variations},
+  19(1):190--218, 2013.
+
+\bibitem{brezis1999analyse}
+H.~Br{\'e}zis, P.G. Ciarlet, and J.L. Lions.
+\newblock {\em Analyse fonctionnelle: Th{\'e}orie et applications}.
+\newblock Collection Math{\'e}matiques appliqu{\'e}es pour la ma{\^\i}trise.
+  Dunod, 1999.
+
+\bibitem{Burger_Osher04}
+M.~Burger and S.~Osher.
+\newblock Convergence rates of convex variational regularization.
+\newblock {\em Inverse Problems}, 20(5):1411--1421, 2004.
+
+\bibitem{Candes-superresol-noisy}
+E.~J. Cand{\`e}s and C.~Fernandez-Granda.
+\newblock Super-resolution from noisy data.
+\newblock {\em Journal of Fourier Analysis and Applications}, 19(6):1229--1254,
+  2013.
+
+\bibitem{Candes-toward}
+E.~J. Cand{\`e}s and C.~Fernandez-Granda.
+\newblock Towards a mathematical theory of super-resolution.
+\newblock {\em Communications on Pure and Applied Mathematics},
+  67(6):906?--956, 2014.
+
+\bibitem{chen1999atomi}
+S.S. Chen, D.L. Donoho, and M.A. Saunders.
+\newblock Atomic decomposition by basis pursuit.
+\newblock {\em SIAM journal on scientific computing}, 20(1):33--61, 1999.
+
+\bibitem{Claerbout-geophysics}
+J.~F. Claerbout and F.~Muir.
+\newblock Robust modeling with erratic data.
+\newblock {\em Geophysics}, 38(5):826--844, 1973.
+
+\bibitem{Condat-Cadzow}
+L.~Condat and A.~Hirabayashi.
+\newblock Cadzow denoising upgraded: A new projection method for the recovery
+  of dirac pulses from noisy linear measurements.
+\newblock {\em Sampling Theory in Signal and Image Processing, to appear},
+  2014.
+
+\bibitem{deCastro-beurling}
+Y.~{de Castro} and F.~Gamboa.
+\newblock Exact reconstruction using beurling minimal extrapolation.
+\newblock {\em Journal of Mathematical Analysis and Applications},
+  395(1):336--354, 2012.
+
+\bibitem{Demanet-pencil}
+L.~Demanet, D.~Needell, and N.~Nguyen.
+\newblock Super-resolution via superset selection and pruning.
+\newblock {\em CoRR}, abs/1302.6288, 2013.
+
+\bibitem{Donoho-superresol-sparse}
+D.~L. Donoho.
+\newblock Superresolution via sparsity constraints.
+\newblock {\em SIAM J. Math. Anal.}, 23(5):1309--1331, September 1992.
+
+\bibitem{DossalMallat}
+C.~Dossal and S.~Mallat.
+\newblock {Sparse spike deconvolution with minimum scale}.
+\newblock In {\em Proceedings of SPARS}, pages 123--126, November 2005.
+
+\bibitem{Duarte-spectral-cs}
+M.~F. Duarte and R.~G. Baraniuk.
+\newblock Spectral compressive sensing.
+\newblock {\em Applied and Computational Harmonic Analysis}, 35(1):111--129,
+  2013.
+
+\bibitem{ekeland1976convex}
+I.~Ekeland and R.~T{\'e}mam.
+\newblock {\em Convex Analysis and Variational Problems}.
+\newblock Number vol.~1 in Classics in Applied Mathematics. Society for
+  Industrial and Applied Mathematics, 1976.
+
+\bibitem{Fannjiang-cs-unresolved}
+A.~Fannjiang and W.~Liao.
+\newblock Coherence pattern-guided compressive sensing with unresolved grids.
+\newblock {\em SIAM J. Img. Sci.}, 5(1):179--202, February 2012.
+
+\bibitem{Fernandez-Granda-support}
+C.~Fernandez-Granda.
+\newblock Support detection in super-resolution.
+\newblock {\em Proc. Proceedings of the 10th International Conference on
+  Sampling Theory and Applications}, pages 145--148, 2013.
+
+\bibitem{fuchs2004on-sp}
+J.J. Fuchs.
+\newblock {On sparse representations in arbitrary redundant bases}.
+\newblock {\em IEEE Transactions on Information Theory}, 50(6):1341--1344,
+  2004.
+
+\bibitem{Grasmair-cpam}
+M.~Grasmair, O.~Scherzer, and M.~Haltmeier.
+\newblock Necessary and sufficient conditions for linear convergence of
+  $\ell_1$-regularization.
+\newblock {\em Communications on Pure and Applied Mathematics}, 64(2):161--182,
+  2011.
+
+\bibitem{Hofmann-measures}
+B.~Hofmann, B.~Kaltenbacher, C.~Poschl, and O.~Scherzer.
+\newblock A convergence rates result for tikhonov regularization in {B}anach
+  spaces with non-smooth operators.
+\newblock {\em Inverse Problems}, 23(3):987, 2007.
+
+\bibitem{Levy-Fullagar-81}
+S.~Levy and P.~Fullagar.
+\newblock Reconstruction of a sparse spike train from a portion of its spectrum
+  and application to high-resolution deconvolution.
+\newblock {\em Geophysics}, 46(9):1235--1243, 1981.
+
+\bibitem{Lindberg-review}
+J.~Lindberg.
+\newblock Mathematical concepts of optical superresolution.
+\newblock {\em Journal of Optics}, 14(8):083001, 2012.
+
+\bibitem{Lorenz-omp}
+D.~A. Lorenz and D.~Trede.
+\newblock {Greedy Deconvolution of Point-like Objects}.
+\newblock In R{\'e}mi Gribonval, editor, {\em {SPARS'09}}, Saint Malo, France,
+  2009.
+
+\bibitem{Odendaal-music}
+J.~W. {Odendaal}, E.~{Barnard}, and C.~W.~I. {Pistorius}.
+\newblock {Two-dimensional superresolution radar imaging using the MUSIC
+  algorithm}.
+\newblock {\em IEEE Transactions on Antennas and Propagation},
+  42(10):1386--1391, October 1994.
+
+\bibitem{Park-review}
+S.C. Park, M.K. Park, and M.G. Kang.
+\newblock {Super-resolution image reconstruction: a technical overview}.
+\newblock {\em IEEE Signal Processing Magazine}, 20(3):21--36, 2003.
+
+\bibitem{santosa1986linear}
+F.~Santosa and W.W. Symes.
+\newblock Linear inversion of band-limited reflection seismograms.
+\newblock {\em SIAM Journal on Scientific and Statistical Computing},
+  7(4):1307--1330, 1986.
+
+\bibitem{Scherzer-ssvm}
+O.~Scherzer and B.~Walch.
+\newblock Sparsity regularization for radon measures.
+\newblock In {\em Scale Space and Variational Methods in Computer Vision},
+  volume 5567 of {\em Lecture Notes in Computer Science}, pages 452--463.
+  Springer Berlin Heidelberg, 2009.
+
+\bibitem{Tang-linea-spectral}
+G.~Tang, B.~Narayan Bhaskar, and B.~Recht.
+\newblock Near minimax line spectral estimation.
+\newblock {\em CoRR}, abs/1303.4348, 2013.
+
+\bibitem{tibshirani1996regre}
+R.~Tibshirani.
+\newblock Regression shrinkage and selection via the {L}asso.
+\newblock {\em Journal of the Royal Statistical Society. Series B.
+  Methodological}, 58(1):267--288, 1996.
+
+\bibitem{Turan1946}
+P.~Tur\'an.
+\newblock On rational polynomials.
+\newblock {\em Acta Univ. Szeged, Sect. Sci. Math.}, pages 106--113, 1946.
+
+\bibitem{vaiter2011robust}
+S.~Vaiter, G.~Peyr\'{e}, C.~Dossal, and J.~Fadili.
+\newblock Robust sparse analysis regularization.
+\newblock {\em IEEE Transactions on Information Theory}, 59(4):2001--2016,
+  2013.
+
+\bibitem{Zhao-irrepresentability}
+P.~Zhao and B.~Yu.
+\newblock On model selection consistency of {L}asso.
+\newblock {\em J. Mach. Learn. Res.}, 7:2541--2563, December 2006.
+
+\end{thebibliography}

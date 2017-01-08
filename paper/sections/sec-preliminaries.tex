@@ -1,0 +1,282 @@
+% !TEX root = ../DuvalPeyre-SparseSpikes.tex
+
+\section{Preliminaries}
+\label{sec-preliminaries}
+
+In this section, we precise the framework and we state the basic results needed in the next sections. We refer to~\cite{brezis1999analyse} for aspects regarding functional analysis and to~\cite{ekeland1976convex} as far as duality in optimization is concerned.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Topology of Radon Measures}
+
+Since $\TT$ is compact, the space of Radon measures $\Mm(\TT)$ can be defined as the dual of the space $C(\TT)$ of continuous functions on $\TT$, endowed with the uniform norm. It is naturally a Banach space when endowed with the dual norm (also known as the total variation), defined as
+\begin{align}
+	\forall m \in \Mm(\TT), \quad
+	\normTV{m}= \sup 
+		\enscond{ \int \psi \d m }{ \psi\in C(\TT), \normi{\psi} \leq 1 }.
+\label{eq-def-tv}
+\end{align}
+In that case, the dual of $\Mm(\TT)$ is a complicated space, and it is strictly larger than $C(\TT)$ as $C(\TT)$ is not reflexive. 
+
+However, if we endow $\Mm(\TT)$ with its weak-* topology (i.e. the coarsest topology such that the elements of $C(\TT)$ define continuous linear forms on $\Mm(\TT)$), then $\Mm(\TT)$ is a locally convex space whose dual is $C(\TT)$.
+
+In the following, we endow $C(\TT)$ (respectively $\Mm(\TT)$) with its weak (respectively its weak-*) topology so that both have symmetrical roles:  one is the dual of the other, and conversely. Moreover, since $C(\TT)$ is separable, the set 
+$\enscond{m \in \Mm(\TT) }{ \normTV{m} \leq 1 }$ endowed with the weak-* topology is metrizable.
+
+Given a function $\phi \in C^{2}(\TT, \RR)$, we define an operator 
+$\Phi : \Mm(\TT) \rightarrow \Ldeux(\TT)$ as 
+\eq{
+	\foralls m \in \Mm(\TT), \quad \Phi(m) : t \mapsto \int_{\TT} \phi(x-t) \d m(x).
+}
+It can be shown using Fubini's theorem that $\Phi$ is weak-* to weak continuous.
+Moreover, its adjoint operator $\Phi^* : \Ldeux(\TT) \rightarrow C(\TT)$ is defined as
+\eq{
+	\foralls y \in \Ldeux(\TT), \quad 
+	\Phi^*(y) : t \mapsto \int_{\TT} \phi(t-x) y(x) \d x.
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Subdifferential of the Total Variation}
+
+It is clear from the definition of the total variation in~\eqref{eq-def-tv} that it is convex lower semi-continuous with respect to the weak-* topology. Its subdifferential is defined as 
+\begin{align}
+ 	\partial \normTV{m} = \enscond{\eta\in C(\TT)}{\forall \tilde{m}\in \Mm(\TT), \normTV{\tilde{m}} \geq \normTV{m} + \int \eta \, \d(\tilde{m}-m) },
+\end{align}
+for any $m\in \Mm(\TT)$ such that $\normTV{m}<+\infty$.
+
+Since the total variation is a sublinear function, its subgradient has a special structure. One may show (see Proposition~\ref{prop-subdifferential} in Appendix~\ref{sec-auxiliary}) that
+\begin{align}
+ 	\partial \normTV{m} = \enscond{\eta\in C(\TT)}{ \normi{\eta} \leq 1 \qandq \int \eta \, \d m =\normTV{m}  }.
+\end{align}
+
+In particular, when $m$ is a measure with finite support, i.e. $m=\sum_{i=1}^N a_i \delta_{x_i}$ for some $N\in \NN$, with $(a_i)_{1\leq i\leq N}\in (\RR^*)^N$ and distinct $(x_i)_{1\leq i \leq N}\in \TT^N$ 
+\begin{align}
+ 	\partial \normTV{m} = \enscond{\eta\in C(\TT)}{ \normi{\eta} \leq 1 \;\text{and}\; \foralls i=1,\ldots,N, \; \eta(x_i)=\sign(a_i)  }.
+\end{align}
+
+%For brevity, we may write the second condition as $\eta (x)= \sign (a)$ where $x=(x_1,\ldots x_N)$, and $a=(a_1,\ldots a_N)$.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Primal and Dual Problems}
+
+Given an observation $y_0=\Phi m_0 \in \Ldeux(\TT)$ for some $m_0\in \Mm(\TT)$, we consider reconstructing $m_0$ by solving either the relaxed problem for $\la >0$
+\eql{\label{eq-initial-pb}\tag{$\Pp_\la(y_0)$}
+	\umin{m \in \Mm(\TT)} \frac{1}{2} \norm{\Phi(m) - y_0}_2^2 + \la \normTV{m},
+}
+or the constrained problem 
+\eql{\label{eq-constrained-pbm}\tag{$\Pp_0(y_0)$}
+	\umin{\Phi(m)=y_0} \normTV{m}.
+}
+If $m_0$ is the unique solution of \eqref{eq-constrained-pbm}, we say that $m_0$ is \textit{identifiable}.
+
+In the case where the observation is noisy (i.e. the observation $y_0$ is replaced with $y_0+w$ for $w\in L^2(\TT)$), we attempt to reconstruct $m_0$ by solving $\Pp_\la(y_0+w)$ for a well-chosen value of $\la>0$.
+
+Existence of solutions for~\eqref{eq-initial-pb} is shown in~\cite{Bredies-space-measures}, and existence of solutions
+for~\eqref{eq-constrained-pbm} can be checked using the direct method of the calculus of variations (recall that for~\eqref{eq-constrained-pbm}, we assume that the observation is $y_0=\Phi m_0$).
+
+A straightforward approach to studying the solutions of Problem~\eqref{eq-initial-pb} is then to apply Fermat's rule: 
+a discrete measure $m=m_{a,x}=\sum_{i=1}^N a_i\delta_{x_i}$ is a solution of $\eqref{eq-initial-pb}$ if and only if there exists $\eta\in C(\TT)$ such that
+\eq{
+	\Phi^*(\Phi m -y_0) +\la \eta =0,
+}
+with $\normi{\eta} \leq 1$ and $\eta(x_i)=\sign(a_i)$ for $1\leq i\leq N$.
+
+Another source of information for the study of Problems~\eqref{eq-initial-pb} and~\eqref{eq-constrained-pbm} is given by their associated dual problems. In the case of the ideal low-pass filter, this approach is also the key to the numerical algorithms 
+used in~\cite{Bhaskar-line-spectral,Candes-toward,Azais-inaccurate}: the dual problem can be recast into a finite-dimensional problem.
+
+The Fenchel dual problem to~\eqref{eq-initial-pb} is given by
+\eql{\label{eq-initial-dual}\tag{$\Dd_\la(y_0)$}
+	\umax{ \normi{\Phi^* p} \leq 1} \dotp{y_0}{p} - \frac{\la}{2}\norm{p}_2^2,
+}
+which may be reformulated as a projection on a closed convex set (see~\cite{Bredies-space-measures,Azais-inaccurate})
+\eql{\label{eq-initial-dualbis}\tag{$\Dd'_\la(y)$}
+	\umin{ \normi{\Phi^* p} \leq 1} \norm{\frac{y_0}{\la}-p}_2^2.
+}
+This formulation immediately yields existence and uniqueness of a solution to~\eqref{eq-initial-dual}.
+
+
+The dual problem to~\eqref{eq-constrained-pbm} is given by
+\eql{\label{eq-constrained-dual}\tag{$\Dd_0(y_0)$}
+	\usup{ \normi{\Phi^* p}\leq 1} \dotp{y_0}{p}.
+}
+ Contrary to~\eqref{eq-initial-dual}, the existence of a solution to~\eqref{eq-constrained-dual} is not always guaranteed, so that in the following (see Definition~\ref{def-ndsc}) we make this assumption. 
+
+Existence is guaranteed when for instance $\Im \Phi^*$ is finite-dimensional (as is the case in the framework of~\cite{Candes-toward}). If a solution to~\eqref{eq-constrained-dual} exists, the unique solution of~\eqref{eq-initial-dual} converges to a certain solution of~\eqref{eq-constrained-dual} for $\la \to 0^+$ as shown in Proposition~\ref{prop-gamma-convergence} below.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Dual Certificates}
+\label{sec-dualcertif}
+
+The strong duality between $(\Pp_\la(y_0))$ and~\eqref{eq-initial-dual} is proved in~\cite[Prop.~2]{Bredies-space-measures} by seeing~\eqref{eq-initial-dualbis} as a predual problem for~\eqref{eq-initial-pb}. As a consequence, both problems have the same value and any solution $m_\la$ of~\eqref{eq-initial-pb} is linked with the unique solution $p_\la$ of~\eqref{eq-initial-dual} by the extremality condition
+\begin{align}
+	\left\{
+		\begin{array}{c}
+			\Phi^*p_\la \in \partial\normTV{m_\la}, \\
+			-p_\la = \frac{1}{\la}(\Phi m_\la - y_0).
+		\end{array}
+	\right.
+\label{eq-extremal-cdt}
+\end{align}
+Moreover, given a pair $(m_\la,p_\la)\in \Mm(\TT) \times L^2(\TT)$, if relations~\eqref{eq-extremal-cdt} hold, then $m_\la$ is a solution to Problem~\eqref{eq-initial-pb} and $p_\la$ is the unique solution to Problem~\eqref{eq-initial-dual}.
+
+As for~\eqref{eq-constrained-pbm}, a proof of strong duality is given in Appendix~\ref{sec-auxiliary} (see Proposition~\ref{prop-strong-dual}).
+If a solution $p^\star$ to~\eqref{eq-constrained-dual} exists, then it is linked to any solution $m^\star$ of~\eqref{eq-constrained-pbm} by
+\begin{align}
+	\Phi^* p^\star \in \partial{\normTV{m^\star}},
+\label{eq-extremal-constrained}
+\end{align}
+and similarly, given a pair $(m^\star,p^\star)\in \Mm(\TT)\times L^2(\TT)$, if relation~\eqref{eq-extremal-constrained} hold, then $m^\star$ is a solution to Problem~\eqref{eq-constrained-pbm} and $p^\star$ is a solution to Problem~\eqref{eq-constrained-dual}).
+
+Since finding $\eta = \Phi^* p^\star$ which satisfies~\eqref{eq-extremal-constrained} gives a quick proof
+that $m^\star$ is a solution of~\eqref{eq-constrained-pbm}, we call $\eta$ a \textit{dual certificate} for $m^\star$.
+We may also use a similar terminology for $\eta_\la=\Phi^* p_\la$ and Problem~\eqref{eq-initial-pb}.
+
+In general, dual certificates for~\eqref{eq-constrained-pbm} are not unique, but we consider in the following definition a specific one, which is crucial for our analysis.
+
+\begin{defn}[Minimal-norm certificate]
+	When it exists, the minimal-norm dual certificate associated with~\eqref{eq-constrained-pbm} is defined as $\eta_0=\Phi^* p_0$ where $p_0 \in L^2(\TT)$ is the solution of~\eqref{eq-constrained-dual} with minimal norm, i.e.
+\begin{align}
+	\eta_0=\Phi^* p_0,&  
+	\qwhereq
+	p_0=\uargmin{p}
+		\enscond{ \norm{p}_2 }{ p \mbox{ is a solution of }\eqref{eq-constrained-dual} }.
+\label{eq-min-norm-certif}
+\end{align}
+\end{defn}
+Observe that in the above definition, $p_0$ is well-defined provided there exists a solution to Problem~\eqref{eq-constrained-dual}, since $p_0$ is then the projection of $0$ onto the non-empty closed convex set of solutions.
+Moreover, in view of the extremality conditions~\eqref{eq-extremal-constrained}, given any solution $m^\star$ to~\eqref{eq-constrained-pbm}, it may be expressed as 
+\begin{align}\label{eq-min-norm-certifbis}
+	p_0=\uargmin{ p }
+		\enscond{ \norm{ p }_2 }{ \Phi^* p \in \partial{\normTV{m^\star}}  }.
+\end{align}
+
+
+\begin{prop}[Convergence of dual certificates]
+Let $p_\la$ be the unique solution of Problem~\eqref{eq-initial-dual}, and $p_0$ be the solution of Problem~\eqref{eq-constrained-dual} with minimal norm defined in~\eqref{eq-min-norm-certif}.
+Then 
+\begin{align*}
+\lim_{\la \to 0^+} p_\la = p_0 \quad \mbox{for the } L^2 \mbox{ strong topology.}
+\end{align*}
+Moreover the dual certificates $\eta_\la= \Phi^*p_\la$ for Problem~\eqref{eq-initial-pb} converge to the minimal norm certificate $\eta_0 = \Phi^*p_0$. More precisely, 
+\begin{align}
+	\forall k\in \{0,1,2\}, \quad 
+	\lim_{\la \to 0^+} \eta_\la^{(k)} = \eta_0^{(k)},
+\end{align}
+in the sense of the uniform convergence.
+\label{prop-gamma-convergence}
+\end{prop}
+
+\begin{proof}
+Let $p_\la$ be the unique solution of~\eqref{eq-initial-dual}. By optimality of $p_\la$ (resp. $p_0$) for
+\eqref{eq-initial-dual} (resp.~\eqref{eq-constrained-dual})
+\begin{align}
+	\dotp{y_0}{p_\la} - \la \norm{p_\la}_2^2 	& \geq \dotp{y_0}{p_0} -\la \norm{p_0}_2^2, \label{eq-optim-la}\\
+	\dotp{y_0}{p_0}  							&\geq  \dotp{y_0}{p_\la}. \label{eq-optim-0}
+\end{align}
+As a consequence $\norm{p_0}_2^2\geq \norm{p_\la}_2^2$ for all $\la>0$.
+
+Now, let $(\la_n)_{n\in\NN}$ be any sequence of positive parameters converging to $0$. The sequence $p_{\la_n}$  being bounded in $L^2(\TT)$, we may extract a subsequence (denoted $\la_{n'}$) such that $p_{\la_{n'}}$ weakly converges to some $p^\star \in L^2(\TT)$. Passing to the limit in~\eqref{eq-optim-la}, we get 
+	$\dotp{y_0}{p^\star} \geq \dotp{y_0}{p_0}$.
+Moreover, $\Phi^*p_{\la_n}$ weakly converges to $\Phi^* p^\star$ in $C(\TT)$, so that 
+$\normi{\Phi^* p^\star} \leq \liminf_{n'} \normi{\Phi^*p_{\la_{n'}}} \leq 1$, and $p^\star$
+  is therefore a solution of~\eqref{eq-constrained-dual}.
+
+But one has 
+\eq{
+  \norm{p^\star}_2\leq \liminf_{n'} \norm{p_{\la_{n'}}}_2\leq \norm{p_0}_2,
+} 
+hence $p^\star=p_0$ and in fact $\lim_{{n'}\to +\infty} \norm{p_{\la_{n'}}}_2=\norm{p_0}_2$. As a consequence, $p_{\la_{n'}}$ converges to $p_0$ for the $L^2(\TT)$ strong topology as well. This being true any sequence $\la_n\to 0^+$, we get the result claimed for $p_\la$: assume by contradiction that there exists $\varepsilon_0>0$ and a sequence $\la_n \searrow 0$ such that $\|p_0-p_{\la_n}\|_2 \geq \varepsilon_0$ for all $n\in\NN$. By the above argument we may extract a subsequence $\la_{n'}$ which converges towards $p_0$, which contradicts $\|p_0-p_{\la_n'}\|_2 \geq \varepsilon_0$. Hence $\lim_{\la\to 0}p_\la=p_0$ strongly in $L^2$.
+    
+It remains to prove the convergence of the dual certificates.
+Observing that $\eta_\la^{(k)}(t)=\int \varphi^{(k)}(t-x)p_\la(x) \d x$, we get    
+\begin{align*}
+  |\eta_\la^{(k)}(t)-\eta_0^{(k)} (t)|&= \absb{ \int_{\TT} \varphi^{(k)}(t-x)(p_\la-p_0)(x) \d x }\\
+  &\leq \sqrt{\int_{\TT} |\varphi^{(k)}(t-x)|^2 \d x} \sqrt{\int_{\TT} |(p_\la -p_0)(x)|^2 \d x}\\
+	&\leq C \norm{p_\la - p_0}_2,
+\end{align*}
+where $C>0$ does not depend on $t$ nor $k$, hence the uniform convergence. 
+\end{proof}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Application to the ideal Low-pass filter}
+
+In this paragraph, we apply the above duality results to the particular case of the Dirichlet kernel, defined as
+\begin{align}
+	\varphi(t) = \sum_{k=-f_c}^{f_c} e^{2i\pi kt} = \frac{\sin \left((2f_c+1)\pi t\right)}{\sin (\pi t)}.
+\end{align}
+It is well known that in this case the spaces $\Im \Phi$ and $\Im \Phi^*$ are finite-dimensional,
+ being the space of real trigonometric polynomials with degree less than or equal to $f_c$.
+
+We first check that a solution to~\eqref{eq-constrained-dual} always exists. As a
+consequence, given any measure $m_0$, the minimal norm certificate is well defined. 
+
+\begin{prop}[Existence of $p_0$]
+Let $m_0\in \Mm(\TT)$ and $y_0=\Phi m_0\in L^2(\TT)$. There exists a solution of~\eqref{eq-constrained-dual}. As a consequence, $p_0\in L^2(\TT)$ is well defined.
+\end{prop}
+
+\begin{proof}
+We rewrite~\eqref{eq-constrained-dual} as 
+\eq{
+	\usup{\normi{\eta} \leq 1, \eta \in \Im \Phi^*} \dotp{m_0}{\eta}.
+}
+Let $(\eta_n)_{n\in \NN}$ be any maximizing sequence. Then $(\eta_n)_{n\in \NN}$ is bounded in the finite-dimensional space of trigonometric polynomials with degree $f_c$ or less. We may extract a subsequence converging to $\eta^\star\in C(\TT)$. But $\normi{\eta^\star} \leq 1$ and $\eta^\star\in \Im \Phi^*$,
+so that $\eta^\star=\Phi^* p^\star$ for some $p^\star$ solution of~\eqref{eq-constrained-dual}.
+\end{proof}
+
+A striking result of~\cite{Candes-toward} is that discrete
+ measures are identifiable provided that their support is separated enough, i.e. $\Delta(m_0) \geq \frac{C}{f_c}$ for some $C>0$, where $\Delta(m_0)$ is the so-called minimum separation distance.
+
+\begin{defn}[Minimum separation]
+The minimum separation of the support of a discrete measure $m$ is defined as
+\eq{
+ 	\Delta(m)=\inf_{(t,t')\in \supp (m)} |t-t'|,
+}
+where $|t-t'|$ is the distance on the torus between $t$ and $t'\in \TT$, and we assume $t\neq t'$.
+\end{defn}
+
+In~\cite{Candes-toward} it is proved that $C \leq 2$ for complex measures (i.e. of the form $m_{a,x}$ for $a \in \CC^N$ and $x \in \TT^N$) and $C \leq 1.87$ for real measures (i.e. of the form $m_{a,x}$ for $a \in \RR^N$ and $x \in \TT^N$). Extrapolating from numerical simulations on a finite grid, the authors conjecture that for complex measures, one has $C\geq 1$.
+ In this section we apply results from Section~\ref{sec-dualcertif} to show that for real measures, necessarily $C\geq \frac{1}{2}$.
+
+We rely on the following theorem, proved by P. Tur\'an~\cite{Turan1946}.
+
+\begin{thm}[Tur\'an]
+Let $P(z)$ be a non trivial polynomial of degree $n$ such that $|P(1)|=\max_{|z|=1} |P(z)|$. Then for any root $z_0$ of $P$ on the unit circle, $|\arg (z_0)|\geq \frac{\pi}{n}$. Moreover, if $|\arg (z_0)|= \frac{\pi}{n}$, then $P(z)=c(1+z^n)$ for some $c\in \CC^*$.
+ \label{thm-turan}
+\end{thm}
+From this theorem we derive necessary conditions for measures that can be reconstructed by~\eqref{eq-constrained-pbm}.
+
+\begin{cor}[Non identifiable measures]
+There exists a discrete measure $m_0$ with $\Delta(m_0)=\frac{1}{2f_c}$ such that $m_0$ is not a solution of~\eqref{eq-constrained-pbm} for $y_0=\Phi m_0$.
+\end{cor}
+
+\begin{proof}
+Let $m_0=\delta_{-\frac{1}{2f_c}}+ \delta_0 -\delta_{\frac{1}{2f_c}}$, assume by contradiction that $m$ is a solution of~\eqref{eq-constrained-pbm},
+ and let $\eta\in C(\TT)$ be an associated dual certificate (which
+  exists since $\Im \Phi^*$ is finite-dimensional).
+Then necessarily $\eta(-\frac{1}{2f_c})=\eta(0)=1$ and $\eta(\frac{1}{2f_c})=-1$ and by the intermediate value theorem, there exists $t_0\in (0, \frac{1}{2f_c})$ such that $\eta(t_0)=0$.
+
+Writing $\eta(t)=\sum_{k=-f_c}^{f_c}d_k e^{2i\pi kt}$,
+  the polynomial $P(z) = \sum_{k=0}^{2f_c}d_{k-f_c}z^k$ satisfies $P(1)=1=\sup_{|z|=1}|P(z)|=|P(e^{\frac{2i\pi}{2f_c}})|$,
+   and $P(e^{2i\pi t_0})=0$.
+
+By Theorem~\ref{thm-turan}, we cannot have $|2\pi t_0 - 0 |<\frac{\pi}{2f_c}$ nor $|2\pi t_0-\frac{2\pi}{2f_c}|<\frac{\pi}{2f_c}$, hence $t_0=\frac{1}{4f_c}$ and $P(z)=c(1+z^{2f_c})$, so that $\eta(t)=\cos (2\pi f_ct)$. But this implies $\eta(-\frac{1}{2f_c})=-1$, which contradicts the optimality of $\eta$.
+\end{proof}
+
+In a similar way, we may also deduce the following corollary.
+
+\begin{cor}[Opposite spikes separation]
+Let $m^\star\in \Mm(\TT)$ be any discrete measure solution of Problem $\Pp_\la(y_0+w)$ or $\Pp_0(y_0)$
+ where $y_0=\Phi m_0$ for any data $m_0\in \Mm(\TT)$ and any noise $w\in L^2(\TT)$. If there
+  exists $x^\star_0\in \TT$ (resp. $x^\star_1\in \TT$) such that $m^\star(\{x^\star_0\})>0$
+   (resp. $m^\star(\{x^\star_1\})<0$), then $|x^\star_0 - x^\star_1 |\geq \frac{1}{2f_c}$.
+\end{cor}
+
+
+

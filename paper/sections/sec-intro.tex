@@ -1,0 +1,155 @@
+% !TEX root = ../DuvalPeyre-SparseSpikes.tex
+
+\section{Introduction}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Sparse Spikes Deconvolution}
+
+Super-resolution is a central problem in imaging science, and loosely speaking corresponds to recovering fine scale details from a possibly noisy input signal or image. This thus encompasses the problems of data interpolation (recovering missing sampling values on a regular grid) and deconvolution (removing acquisition blur). We refer to the review articles~\cite{Park-review,Lindberg-review} and the references therein for an overview of these problems. 
+
+We consider in our article an idealized super-resolution problem, known as sparse spikes deconvolution. It corresponds to recovering 1-D spikes (i.e. both their positions and amplitudes) from blurry and noisy measurements. These measurements are obtained by a convolution of the spikes train against a known kernel. This setup can be seen as an approximation of several imaging devices. A method of choice to perform this recovery is to introduce a sparsity-enforcing prior, among which the most popular is a $\ell^1$-type norm, which favors the emergence of spikes in the solution. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Previous Works}
+
+
+%%%
+\paragraph{Discrete $\ell^1$ regularization. }
+
+
+$\ell^1$-type techniques were initially proposed in geophysics~\cite{Claerbout-geophysics,santosa1986linear,Levy-Fullagar-81} to recover the location of density changes in the underground for seismic exploration. They were later studied in depth by David Donoho and co-workers, see for instance~\cite{Donoho-superresol-sparse}. Their popularity in signal processing and statistics can be traced back to the development of the basis pursuit method~\cite{chen1999atomi} for approximation in redundant dictionaries and the Lasso method~\cite{tibshirani1996regre} for statistical estimation. 
+
+The theoretical analysis of the $\ell^1$-regularized deconvolution was initiated by Donoho~\cite{Donoho-superresol-sparse}.  Assessing the performance of discrete $\ell^1$ regularization methods is challenging and requires to take into account both the specific properties of the operator to invert and of the signal that is aimed at being recovered. A popular approach is to assess the recovery of the positions of the non-zero coefficients. This requires to impose a well-conditioning constraint that depends on the signal of interest, as initially introduced by Fuchs~\cite{fuchs2004on-sp}, and studied in the statistics community under the name of ``irrepresentability condition'', see~\cite{Zhao-irrepresentability}. A similar approach is used by Dossal and Mallat in~\cite{DossalMallat} to study the problem of support stability over a discrete grid.
+
+Imposing the exact recovery of the support of the signal to recover might be a too strong assumption. The inverse problem community rather focuses on the $L^2$ recovery error, which typically leads to a linear convergence rate with respect to the noise amplitude. The seminal paper of Grasmair et al.~\cite{Grasmair-cpam} gives a necessary and sufficient condition for such a convergence, which corresponds to the existence of a non-saturating dual certificate (see Section~\ref{sec-preliminaries} for a precise definition of certificates).  This can be understood as an abstract condition, which is often difficult to check on practical problems such as deconvolution. 
+
+Note that the continuous setting adopted in the present paper might be seen as a limit of such discrete problems, and in Section~\ref{sec-discrete}, we relate our results to well-known results on discrete grids. 
+
+Let us also note that, although we focus here on $\ell^1$-based methods, there is a vast literature on various non-linear super-resolution schemes. This includes for instance greedy~\cite{Odendaal-music,Lorenz-omp}, root finding~\cite{Blu-fri,Condat-Cadzow}, matrix pencils~\cite{Demanet-pencil} and compressed sensing~\cite{Fannjiang-cs-unresolved,Duarte-spectral-cs} approaches. 
+
+%%%
+\paragraph{Inverse problems regularization with measures.}
+
+Working over a discrete grid makes the mathematical analysis difficult. Following recent proposals~\cite{deCastro-beurling,Bredies-space-measures,Candes-toward,Bhaskar-line-spectral}, we consider here this sparse deconvolution over a continuous domain, i.e. in a grid-free setting. This shift from the traditional discrete domain to a continuous one offers considerable advantages in term of mathematical analysis, allowing for the first time the emergence of almost sharp signal-dependent criteria for stable spikes recovery (see references below).  Note that while the corresponding continuous recovery problem is infinite dimensional in nature, it is possible to find its solution using either provably convergent algorithms~\cite{Bredies-space-measures} or root finding methods for ideal low pass filters~\cite{Candes-toward}.
+
+Inverse problem regularization over the space of measures is now well understood (see for instance~\cite{Scherzer-ssvm,Bredies-space-measures}), and requires to perform variational analysis over a non-reflexive Banach space (as in \cite{Hofmann-measures}), which leads to some mathematical technicalities. We capitalize on these earlier works to build our analysis of the recovery performance. 
+
+
+%%%
+\paragraph{Theoretical analysis of deconvolution over the space of measures.} 
+
+
+For deconvolution from ideal low-pass measurements, the ground-breaking paper~\cite{Candes-toward} shows that it is indeed possible to construct a dual certificate by solving a linear system when the input Diracs are well-separated. This work is further refined in~\cite{Candes-superresol-noisy} that studies the robustness to noise. In a series of paper~\cite{Bhaskar-line-spectral,Tang-linea-spectral} the authors study the prediction (i.e. denoising) error using the same dual certificate, but they do not consider the reconstruction error (recovery of the spikes). In our work, we use a different certificate to assess the exact recovery of the spikes when the noise is small enough.
+
+In view of the applications of superresolution, it is crucial to understand the precise location of the recovered Diracs locations when the measurements are noisy. Partial answers to this questions are given in~\cite{Fernandez-Granda-support} and~\cite{Azais-inaccurate}, where it is shown (under different conditions on the signal-to-noise level) that the recovered spikes are clustered tightly around the initial measure's Diracs. In this article, we fully answer the question of the position of the recovered Diracs in the setting where the signal-to-noise ratio is large enough. 
+
+% TODO
+% See also for a different, less tight, analysis~\cite{Kahane-XUPS}
+%~\cite{Azais-inaccurate}~\cite{deCastro-beurling}
+
+%%%%%%%%%%%%%%
+\subsection{Formulation of the Problem and Contributions.}
+
+Let $m_0=\sum_{i=1}^N a_{0,i}\delta_{x_{0,i}}$ be a discrete measure defined on the torus $\TT=\RR/\ZZ$, where $a_0 \in \RR^N$ and $x_0 \in \TT^N$. We assume we are given some low-pass filtered observation $y_0=\Phi m_0 \in L^2(\TT)$. Here $\Phi$ denotes a convolution operator with some kernel $\varphi \in C^2(\TT)$. The observation might be noisy, in which case we are given $y_0+w= \Phi m_0 + w$, with $w\in L^2(\TT)$, instead of $y_0$.
+
+Following~\cite{Candes-toward,deCastro-beurling}, we hope to recover $m_0$ by solving the problem
+\begin{align}\tag{$\Pp_0(y_0)$}
+	\umin{\Phi m=y_0} \normTV{m}.
+\label{intro-constrained}
+\end{align}
+among all Radon measures, where $\normTV{m}$ refers to the total variation (defined below) of $m$. Note that in our setting, the total variation is the natural extension of the $\ell^1$ norm of finite dimensional vectors to the setting of Radon measures, and it should not be mistaken for the total variation of functions, which is routinely used to recover signals or images.
+
+We may also consider reconstructing $m_0$ by solving the following penalized problem for $\la >0$, also known as the Beurling LASSO (see for instance~\cite{Azais-inaccurate}):
+\begin{align*}\tag{$\Pp_\la(y_0)$}
+	\umin{m} \frac{1}{2} \norm{\Phi m - y_0}_2^2 + \la \normTV{m}.
+\label{intro-initial}
+\end{align*}
+This is especially useful if the observation is noisy, in which case $y_0$ should be replaced with $y_0+w$.
+
+Four questions immediately arise:
+\begin{enumerate}
+	\item Does the resolution of~\eqref{intro-constrained} for $y_0=\Phi m_0$ actually recover interesting measures $m_0$?
+	\item How close is the solution of~\eqref{intro-initial} to the solution of~\eqref{intro-constrained} when $\la$ is small enough? 
+	\item How close is the solution of~$(\Pp_\la(y_0+w))$ to the solution of~\eqref{intro-initial} when both $\la$ and $w/\la$ are small enough? 
+	\item What can be said about the above questions when solving~\eqref{intro-initial} with measures supported on a fixed finite grid? 
+\end{enumerate}
+
+The first question is addressed in the landmark paper~\cite{Candes-toward} in the case of ideal low-pass filtering: measures $m_0$ whose spikes are separated enough are the unique solution of~\eqref{intro-constrained} (for data $y_0=\Phi m_0$). Several other cases (using observations different from convolutions) are also tackled in~\cite{deCastro-beurling}, particularly in the case of non-negative measures.
+
+The second and third questions receive partial answers in~\cite{Bredies-space-measures,Candes-superresol-noisy,Azais-inaccurate,Fernandez-Granda-support}. In~\cite{Bredies-space-measures} it is shown that if the solution of~\eqref{intro-constrained} is unique, the measures recovered by $(\Pp_\la(y_0+w))$ converge to the solution of~\eqref{intro-constrained} in the sense of the weak-* convergence when $\la \to 0$ and $\frac{\norm{w}_2^2}{\la}\to 0$. In~\cite{Candes-superresol-noisy}, the authors measure the reconstruction error using the $L^2$ norm of a low-pass filtered version of recovered measures. In~\cite{Azais-inaccurate}, error bounds are derived from the amplitudes of the reconstructed measure. In~\cite{Fernandez-Granda-support}, bounds are given in terms of the original measure. However, those works provide little information about the structure of the measures recovered by $(\Pp_\la(y_0+w))$: \textit{are they made of less spikes than $m_0$ or, in the contrary, do they present lots of parasitic spikes? What happens if one compels the spikes to belong to a finite grid?}
+
+The fourth question is of primary importance since most numerical schemes for sparse regularization solve a finite dimensional optimization problem over a fixed discretization grid. Following~\cite{Candes-toward}, one can remark that in the noiseless setting, if $m_0$ is recovered over the continuous domain and if its support is included in the grid, $m_0$ is also guaranteed to be recovered by the discretized problem. But this is of little interest in practice because the noise is likely to impact in a different manner the discrete problem and the input measure might fall outside the grid locations. Dossal and Mallat in~\cite{DossalMallat} study the stability of the position of the Diracs on the grid, which leads to overly pessimistic conclusions because noise typically forces the spikes to translate over the domain. Studying the convergence of the discretized problem toward the continuous one is thus important to obtain a precise description of the discretized solution. To the best of our knowledge, the work of ~\cite{Bhaskar-line-spectral} is the only one to provide some conclusion about this convergence in term of denoising error. No previous work has studied the capability of the discretized problem to estimate in a precise manner the location of the spikes of the input measure. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Contributions.} 
+
+The present paper studies in detail the structure of the recovered measure. For this purpose, we define the minimal $L^2$-norm certificate. This certificate fully governs the behavior of the regularization when both $\la$ and $\norm{w}_2/\la$ are small. 
+
+Our first contribution is a set of results indicating that the regions of saturation of the certificate (when it reaches $+1$ or $-1$) are approximately stable when $\la$ and $\norm{w}_2/\la$ are small enough. This means that the recovered measures are supported closely to the support of the input measure if the latter is identifiable (solution of the noiseless problem~\eqref{intro-constrained}). 
+
+Our second contribution introduces the \textit{Non Degenerate Source Condition}, which imposes that the second derivative of the minimal-norm certificate does not vanish on the saturation points. Under this condition, we show that for $\la$ and $\norm{w}_2/\la$ small enough, the reconstructed measure has exactly the same number of spikes as the original measure and that their locations and amplitudes converge to those of the original one.
+
+Our third contribution shows that under the \textit{Non Degenerate Source Condition}, the minimal norm certificate can actually be computed in closed form by simply solving a linear system. This in turn also implies that the errors in the amplitudes and locations decay linearly with respect to the noise level. 
+
+Our fourth and last contribution focuses on the regularization over a discrete finite grid, which corresponds to the so-called Lasso or Basis Pursuit Denoising problem. We show that when $\la$ and $\norm{w}_2/\la$ are small enough, and provided that the Non Degenerate Source Condition holds, the discretized solution is located on pairs of Diracs adjacent to the input Diracs location. This gives a precise description of how the solution to the discretized problem converges to the one of the continuous problem when the stepsize of the grid vanishes.
+
+Throughout the paper, the proposed definitions and results are illustrated in the case of the ideal low-pass filter, showing that the assumptions are actually relevant. Note that the code to reproduce the figures of this article is available online\footnote{\url{https://github.com/gpeyre/2013-FOCM-SparseSpikes/}}.
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Outline of the paper.}
+
+Section~\ref{sec-preliminaries} defines the framework for the recovery of Radon measures using total variation minimization. We also expose basic results that are used throughout the paper. Section~\ref{sec-noise-robust} is devoted to the main result of the paper: we define the \textit{Non Degenerate Source Condition} and we show that it implies the robustness of the reconstruction using $(\Pp_\la(y_0+w))$. In Section~\ref{sec-vanishing} we show how the specific dual certificate involved in the \textit{Non Degenerate Source Condition} can be computed numerically by solving a linear system. Lastly, Section~\ref{sec-discrete} focuses on the recovery of measures on a discrete grid.
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Notations}
+
+For any Radon measure $m$ defined on $\TT$, we denote its support by $\supp(m)$.
+If $\supp(m)$ is a finite set (in which case we say that $m$ is a discrete measure) and $m\neq 0$, then
+ $m$ is of the form $m= \sum_{i=1}^N a_i \delta_{x_i}$, where $N\in \NN^*$, $a\in \RR^N$, $x\in \TT^N$
+ and $a_i\neq 0$ and $x_i\neq x_j$ for all $1\leq i,j\leq N$. In the rest of the paper, we shall write $m=m_{a,x}$
+to  hint that $m$ has the above decomposition (implying that $a_i\neq 0$ and $x_i\neq x_j$ for all $1\leq i,j\leq N$). 
+
+We also define the \textit{signed support}:
+\begin{align*}
+  \ssupp m &= (\supp m_+) \times \{1\}\cup (\supp m_-)\times\{-1\} \subset \TT \times \{+1,-1 \}
+\end{align*}
+where $m_+$ (resp. $m_-$) denotes the positive (resp. negative) part of $m$.
+For a discrete measure $m=m_{a,x}$, 
+\begin{align*}
+\ssupp m &=\left\{(t,v)\in \TT\times \{+1,-1\}, \ m(\{t \})\neq 0 \mbox{ and } \sign m(\{t \})=v \right\}\\
+&= \{(x_i,\sign a_i), \ 1\leq i\leq N\}.
+\end{align*}
+We shall consider restrictions of measures and functions to subsets of $\TT$. For $m \in \Mm(\TT)$ a discrete measure and $J=\{x_1,\ldots,x_k\} \subset \TT$ a finite set, we define 
+\eq{
+	\restr{m}{J} = a \in \TT^{k}
+	\qwhereq
+	\foralls i=1,\ldots,k, \quad a_i = m(\{x_i\}).  
+}
+For $\eta \in C(\TT)$ a continuous function defined on $\TT$, we define
+\eq{
+	\restr{\eta}{J} = ( \eta(x_j) )_{j=1}^k \in \TT^{k}.
+}
+
+
+
+ Given a convolution operator $\Phi$ with kernel $t\mapsto \varphi(-t)$, we define $\Phi_x : \RR^N \rightarrow L^2(\TT)$ (resp. $\Phi_x'$, $\Phi_x''$) by
+\begin{align}\label{eq-notation-Phix}
+\forall a\in \RR^N,\	\Phi_x(a) &= \Phi( m_{a,x} ) = \sum_{i=1}^N a_i \phi(x_i - \cdot), \\
+	\Phi'_x(a) &= (\Phi_x(a))' = \sum_{i=1}^N a_i \phi'(x_i - \cdot), \\
+	{\Phi''_x}(a) &= (\Phi_x(a))'' = \sum_{i=1}^N a_i \phi''(x_i - \cdot).
+\end{align}
+We define 
+\begin{align}\label{eq-gammax}
+	\Ga_x &= (\Phi_x, \Phi_x') : (u,v) \in \RR^N \times \RR^N \mapsto \Phi_x u + \Phi'_x v \in \Ldeux(\TT), \\
+	\Ga_x'&= (\Phi'_x, \Phi''_x): (u,v) \in \RR^N \times \RR^N \mapsto \Phi_x' u + \Phi''_x v \in \Ldeux(\TT). 
+\end{align}
+
+Eventually, in order to study small noise regimes, we shall consider domains $D_{\alpha,\la_0}$, for $\alpha>0$, $\la_0>0$, where:
+\eql{\label{eq-constr-set}
+	D_{\alpha,\la_0}=\enscond{(\la,w)\in \RR_+\times L^2(\TT) }{ 0\leq \la \leq \la_0 \qandq \norm{w}_2\leq \alpha \la  }.
+}

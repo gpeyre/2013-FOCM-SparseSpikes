@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Sparse Spikes Deconvolution}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Previous Works}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Formulation of the Problem and Contributions.}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Notations}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Preliminaries}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Topology of Radon Measures}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Subdifferential of the Total Variation}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Primal and Dual Problems}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.4}{Dual Certificates}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.5}{Application to the ideal Low-pass filter}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Noise Robustness}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Extended signed support}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Local behavior of the support}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Non Degenerate Source Condition}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.4}{Main Result}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.5}{Extensions}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.6}{Application to the ideal Low-pass filter}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{Vanishing Derivatives Pre-certificate}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Dual Pre-certificates}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Necessary condition for support recovery}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.3}{Application to the Ideal Low-pass Filter}{section.4}% 22
+\BOOKMARK [1][-]{section.5}{Discrete Sparse Spikes Deconvolution}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Finite Dimensional 1 Regularization}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.2}{Certificates over a Discrete Grid}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.3}{Noise Robustness}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.4}{Structure of the Extended Support for Thin Grids}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.5}{Application to the Ideal Low-pass Filter}{section.5}% 28
+\BOOKMARK [1][-]{appendix.A}{Auxiliary results}{}% 29
+\BOOKMARK [1][-]{appendix.B}{Proof of Proposition 6}{}% 30
+\BOOKMARK [1][-]{appendix.C}{Proof of Proposition 9}{}% 31

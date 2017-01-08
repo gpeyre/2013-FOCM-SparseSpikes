@@ -1,0 +1,20 @@
+% !TEX root = ../DuvalPeyre-SparseSpikes.tex
+
+\begin{center}
+  \textit{Communicated by Emmanuel Cand\`es.}
+\end{center}
+
+\begin{abstract}
+	This paper studies sparse spikes deconvolution over the space of measures. We focus on the recovery properties of the support of the measure (i.e. the location of the Dirac masses) using total variation of measures (TV) regularization. This regularization is the natural extension of the $\ell^1$ norm of vectors to the setting of measures.
+	% 
+	We show that support identification is governed by a specific solution of the dual problem (a so-called dual certificate) having minimum $L^2$ norm. Our main result shows that if this certificate is non-degenerate (see the definition below), when the signal-to-noise ratio is large enough TV regularization recovers the exact same number of Diracs. We show that both the locations and the amplitudes of these Diracs converge toward those of the input measure when the noise drops to zero. 
+	% 
+	Moreover the non-degeneracy of this certificate can be checked by computing a so-called vanishing derivative pre-certificate. This proxy can be computed in closed form by solving a linear system. 		
+ 	%
+ 	Lastly, we draw connections between the support of the recovered measure on a continuous domain and on a discretized grid. We show that when the signal-to-noise level is large enough, and provided the aforementioned dual certificate is non-degenerate, the solution of the discretized problem is supported on pairs of Diracs which are neighbors of the Diracs of the input measure. This gives a precise description of the convergence of the solution of the discretized problem toward the solution of the continuous grid-free problem, as the grid size tends to zero.
+\end{abstract}
+
+{\bf Keywords:~} $\ell^1$ minimization, sparsity,  stable signal recovery, sparse spike trains, super-resolution, deconvolution,  dual certificates, interpolation.
+\\
+\\
+{\bf AMS Subjsect Classification (2010):~} 65J20, 46E27, 49K40.

@@ -1,0 +1,152 @@
+% !TEX root = ../DuvalPeyre-SparseSpikes.tex
+
+\appendix
+\section{Auxiliary results}
+\label{sec-auxiliary}
+
+For the convenience of the reader, we give here the proofs of several auxiliary results
+ which are needed in the discussion.
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \subsection{Strong duality for the constrained problem}
+
+\begin{prop}[Subdifferential of the total variation]
+Let us endow $\Mm(\TT)$ with the weak-* topology and $C(\TT)$ with the weak topology.
+Then, for any $m\in \Mm(\TT)$, we have:
+\begin{align*}
+ 	\partial \normTV{m} = \enscond{\eta\in C(\TT)}{ \normi{\eta} \leq 1 \qandq \int \eta \, \d m =\normTV{m}  }.
+\end{align*}
+\label{prop-subdifferential}
+\end{prop}
+
+\begin{proof}
+Let $A=\enscond{ \eta \in C(\TT) }{ \forall m\in \Mm(\TT), \ \dotp{\eta}{m} \leq \normTV{m} }$.
+It is clear that $B_\infty(0,1)\subset A$, where $B_\infty(0,1)$ is the $L^\infty(\TT)$ closed unit ball.
+Conversely, we observe that $A\subset B_\infty(0,1)$ by considering the Dirac masses $(\pm \delta_t)_{t\in \TT}$.
+
+Let us write $J(m):= \normTV{m}$. The function $J:\Mm(\TT)\rightarrow \RR\cup \{+\infty\}$ is convex, proper, lower semi-continuous (for the weak-* topology), positively homogeneous and:
+\begin{align*}
+J^*(\eta)&=\sup_{m\in \Mm(\TT)} \sup_{t>0} \left( \dotp{\eta}{t m} -J(t m) \right)\\
+&=\sup_{t>0} t\left( \sup_{m\in \Mm(\TT)} \dotp{\eta}{m} -J(m) \right)\\
+&=\choice{
+		 0 \quad \mbox{if } \eta\in A,  \\
+		 +\infty \quad \mbox{otherwise.} \\
+	}
+\end{align*}
+
+By Proposition~I.5.1 in \cite{ekeland1976convex}, for any $\eta\in C(\TT)$:
+\begin{align*}
+\eta\in \partial J(m) \Longleftrightarrow  \dotp{\eta}{m} = J(m) +J^*(\eta),
+\end{align*}
+which is equivalent to $\normi{\eta}\leq 1$ and $\int \eta \d m = \normTV{m}$.
+\end{proof}
+
+\begin{prop}
+There exists a solution to~\eqref{eq-constrained-pbm} and the strong duality holds between
+ \eqref{eq-constrained-pbm} and \eqref{eq-constrained-dual}, i.e. 
+\begin{align}
+	\umin{\Phi(m)=y_0} \normTV{m} =	\usup{\normi{\Phi^* p}\leq 1} \dotp{y_0}{p}.
+\end{align}
+Moreover, if a solution $p^\star$ to \eqref{eq-constrained-dual} exists, 
+\begin{align}
+	\Phi^* p^\star \in \partial{\normTV{m^\star}}
+\label{eq-extremal-dual}
+\end{align}
+where $m^\star$ is any solution to \eqref{eq-constrained-pbm}.
+Conversely, if \eqref{eq-extremal-dual} holds, then $m^\star$ and $p^\star$ are solutions
+of respectively \eqref{eq-constrained-pbm} and \eqref{eq-constrained-dual}.
+\label{prop-strong-dual}
+\end{prop}
+
+\begin{proof}
+We apply \cite[Theorem~II.4.1]{ekeland1976convex} to \eqref{eq-constrained-dual} (and not to \eqref{eq-constrained-pbm} as would be natural)
+rewritten as
+\begin{align*}
+\inf_{\normi{\Phi^* p} \leq 1} \dotp{-y_0}{p},
+\end{align*}
+The infimum is finite since for any admissible $p$, $\dotp{-y_0}{p}=\dotp{m_0}{\Phi p} \geq - \normTV{m_0}$.
+Let $V=L^2(\TT)$, $Y=C(\TT)$ (endowed with the strong topology), $Y^*=\Mm(\TT)$, $F(u)=\dotp{-y_0}{u}$ for $u\in V$,
+ $G(\psi)=\iota_{\normi{\cdot}\leq 1}(\psi)$ for $\psi \in Y$ and $\Lambda=\Phi^*$. It is clear that $F$ and $G$ are proper convex lower semi-continuous functions. Eventually, $F$ is finite at $0$, G is finite and continuous at $0=\Lambda 0$.
+Hence the result.
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Proposition~\ref{prop-gamma-injective}}
+\label{sec-proof1}
+
+Assume that for some $(u,v)\in \RR^N\times \RR^N$, $\Ga_x (u,v)=0$. Then
+\begin{align*}
+	\foralls  t\in \TT, \quad 0&=\sum_{j=1}^N  \left(u_j\varphi(t-x_j)+v_j \varphi'(t-x_j)\right)\\
+&=\sum_{k=-f_c}^{f_c} \left(\sum_{j=1}^N (u_j + 2ik\pi v_j)e^{-2ik\pi x_j}  \right) e^{2ik\pi t}
+\end{align*}
+We deduce that 
+\eq{
+	\foralls k\in \{-f_c,\ldots f_c \}, \quad
+	\sum_{j=1}^N (u_j + k \tilde{v}_j)r_j^k =0
+	\qwhereq
+	\choice{
+		r_j=e^{-2i\pi x_j},\\
+		\tilde{v}_j=2i\pi v_j.
+	}
+}
+It is therefore sufficient to prove that the columns of the following matrix are linearly independent
+\begin{align*}
+\begin{pmatrix}
+r_1^{-f_c} & \ldots &r_N^{-f_c} & (-f_c)r_1^{-f_c}& \ldots &(-f_c)r_N^{-f_c} \\
+\vdots & &\vdots  & \vdots & &\vdots \\
+r_1^{k} & \ldots &r_N^{k} & kr_1^{k}& \ldots &k r_N^{k} \\
+\vdots & &\vdots  & \vdots & &\vdots \\
+r_1^{f_c} & \ldots &r_N^{f_c} & (f_c)r_1^{f_c}& \ldots &(f_c)r_N^{f_c} \\
+\end{pmatrix}.
+\end{align*}
+% Since we have not found this result in standard textbooks, we detail the argument.
+If $N<f_c$, we complete the family $\{r_1, \ldots r_N\}$ in a family $\{r_0,r_1,\ldots r_{f_c}\}\subset \SS^1$ such
+ that the $r_i$'s are pairwise distinct. We obtain a square matrix $M$ by inserting the corresponding columns
+\begin{align*}
+M = \begin{pmatrix}
+r_1^{-f_c} & \ldots &r_{f_c}^{-f_c} & r_0^{-f_c} &(-f_c)r_1^{-f_c}& \ldots &(-f_c)r_{f_c}^{-f_c} \\
+\vdots & &\vdots  &\vdots & \vdots & &\vdots \\
+r_1^{k} & \ldots &r_{f_c}^{k} & r_0^k &kr_1^{k}& \ldots &k r_{f_c}^{k} \\
+\vdots & &\vdots &\vdots & \vdots & &\vdots \\
+r_1^{f_c} & \ldots &r_{f_c}^{f_c} & r_0^{f_c}&(f_c)r_1^{f_c}& \ldots &(f_c)r_{f_c}^{f_c} \\
+\end{pmatrix}.
+\end{align*}
+ We claim that $M$ is invertible. Indeed, if there exists $\alpha\in \CC^{(2f_c+1)}$ such that
+  $M^T \alpha=0$, then the rational function $F(z) = \sum_{k=-f_c}^{f_c} \alpha_k z^{k}$ satisfies:
+\begin{align*}
+  	F(r_j)&=0 \qandq F'(r_j)=0 \ \mbox{ for } 1\leq j \leq f_c,\\
+  	F(r_0)&=0.
+\end{align*}
+Hence, $F$ has at least $2f_c+1$ roots in $\SS^1$, counting the multiplicities. This imposes that $F=0$, thus $\alpha=0$,
+ and $M$ is invertible. The result is proved.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Proof of Proposition~\ref{prop-cv-fixedla}}
+\label{sec-proof2}
+
+Let us denote by $P_{C_n}(x)$ the projection of $x\in L^2(\TT)$ onto $C_n$. We have:
+
+\begin{align*}
+\left\| P_{C_n}(\frac{y_0}{\la})-P_{C_n}(0)\right\|_2 \leq \left\| \frac{y_0}{\la} - 0\right\|_2,
+\end{align*}
+so that the sequence $p_{\la}^{\Gg_n}=P_{C_n}(\frac{y_0}{\la})$ is bounded in $L^2(\TT)$, and we may extract a subsequence $p_{\la}^{\Gg_n'}$
+which weakly converges to some $p_\la^\star\in L^2(\TT)$. Since $C_{n'}$ is (weakly) closed for all $n'$, $p_\la^\star\in \bigcap_{n'} C_{n'}=C$.
+
+Moreover, by the characterization of the projection onto convex sets:
+\begin{align*}
+\forall z\in C\subset C_n', \ \left\langle \frac{y_0}{\la} - p_{\la}^{\Gg_n'},z\right\rangle  - \left\langle \frac{y_0}{\la},p_{\la}^{\Gg_n'}\right\rangle +\norm{p_{\la}^{\Gg_n'}}_2^2 &\leq 0.\\
+\mbox{ Passing to the limit } n'\to +\infty, \ \left\langle \frac{y_0}{\la} - p_{\la}^\star,z\right\rangle - \left\langle \frac{y_0}{\la},p_{\la}^\star\right\rangle + \liminf_{n'} \norm{p_{\la}^{\Gg_n'}}_2^2 &\leq 0,\\
+ \left\langle \frac{y_0}{\la} - p_{\la}^\star,z\right\rangle  - \left\langle \frac{y_0}{\la},p_{\la}^\star\right\rangle + \norm{p_{\la}^\star}_2^2 &\leq 0,\\
+ \left\langle \frac{y_0}{\la} - p_\la^\star,z - p_\la^\star\right\rangle &\leq 0.\\
+\end{align*}
+Thus $p_\la^\star$ is the orthogonal projection of $\frac{y_0}{\la}$ on $C$: $p_\la^\star=P_{C}\left(\frac{y_0}{\la}\right)=p_\la$.
+Since this is true for any subsequence, the whole sequence $p_{\la}^{\Gg_n}$ weakly converges to $p_\la$.
+
+Moreover, by lower semincontinuity and the inclusion $C\subset C_n$ we have:
+\begin{align*}
+\left\|\frac{y_0}{\lambda}-p_\la\right\|_2 &\leq \liminf_{n\to +\infty} \left\|\frac{y_0}{\lambda}-p_{\la}^{\Gg_n}\right\|_2\leq \limsup_{n\to +\infty}\left\|\frac{y_0}{\lambda}-p_{\la}^{\Gg_n}\right\|_2 \leq \left\|\frac{y_0}{\lambda}-p_{\la}\right\|_2, \\
+\end{align*}
+so that $\frac{y_0}{\lambda}-p_{\la}^{\Gg_n}$ converges strongly to $\frac{y_0}{\lambda}-p_{\la}$,
+ hence the strong convergence of $p_{\la}^{\Gg_n}$ to $p_\la$.
+
+The rest of the statement follows from Proposition~\ref{prop-gamma-convergence}.

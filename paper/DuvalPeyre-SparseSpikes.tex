@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+
+% Be sure to use PDF Latex
+\pdfoutput=1
+
+\usepackage[latin1]{inputenc}
+
+\usepackage{graphicx}
+%\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\usepackage{mystyle}
+
+
+\graphicspath{{./images/}}
+
+
+
+
+\title{Exact Support Recovery\\for Sparse Spikes Deconvolution}
+
+\author{
+		Vincent Duval \footnotemark[1]
+    \and Gabriel Peyr\'e \footnotemark[2]
+}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+
+\maketitle
+\footnotetext[1]{INRIA, Domaine de Voluceau, Rocquencourt (vincent.duval@inria.fr)} 
+\footnotetext[2]{CNRS, CEREMADE, Universit\'e Paris-Dauphine (gabriel.peyre@ceremade.dauphine.fr)} 
+\renewcommand{\thefootnote}{\arabic{footnote}} 
+
+
+\input{sections/sec-abstract}
+\input{sections/sec-intro}
+\input{sections/sec-preliminaries}
+\input{sections/sec-robustness}
+\input{sections/sec-vanishing}
+\input{sections/sec-discrete}
+\input{sections/sec-conclusion}
+\input{sections/sec-appendix}
+
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+  
+\end{document}  
